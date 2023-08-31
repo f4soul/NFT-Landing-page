@@ -1,0 +1,126 @@
+.subscribe {
+	background: url('../img/subscribe.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 80px;
+	padding: 117px 0;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 10%;
+		width: 600px;
+		height: 400px;
+		background-image: url(../img/subscribe-blur.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	@media(max-width: 768px) {
+		margin-top: 0;
+	}
+
+	@media(max-width: 390px) {
+		padding: 74px 0;
+	}
+}
+
+.subscribe__title {
+	color: var(--text-color);
+	text-align: center;
+	font-family: var(--font-accent);
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 130px;
+
+	@media(max-width: 768px) {
+		font-size: 50px;
+		line-height: 100px;
+	}
+
+	@media(max-width: 450px) {
+		font-weight: 700;
+		line-height: 120%;
+		margin-bottom: 24px;
+	}
+}
+
+.subscribe__main {
+	div {
+		display: flex;
+		border: 1px solid var(--yellow);
+		width: 680px;
+		margin: 0 auto;
+		justify-content: space-between;
+		border-radius: 15px 16px 16px 15px;
+
+		@media(max-width: 768px) {
+			width: 90%;
+		}
+
+		@media(max-width: 450px) {
+			flex-direction: column;
+			border: 0;
+		}
+	}
+}
+
+.subscribe__input {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	color: var(--text-color);
+	flex-grow: 1;
+	border: 0;
+	outline: 0;
+	padding: 30px 15px 30px 50px;
+
+	&::placeholder {
+		color: #A48EA9;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 18px;
+		padding: 20px 5px 20px 40px;
+	}
+
+	@media(max-width: 450px) {
+		border: 1px solid var(--yellow);
+		border-radius: 15px 16px 16px 15px;
+		width: 100%;
+	}
+}
+
+.subscribe__btn {
+	background: var(--yellow);
+	min-height: 100%;
+	display: block;
+	width: 244px;
+	color: var(--page-bg);
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+	padding: 30px 0;
+	transition: all .3s;
+	border-radius: 0 14px 14px 0;
+
+
+	&:hover {
+		color: var(--yellow);
+		background: #000;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 24px;
+		width: 150px;
+		padding: 15px 0;
+	}
+
+	@media(max-width: 450px) {
+		margin: 0 auto;
+		border-radius: 14px;
+		margin-top: 30px;
+	}
+}

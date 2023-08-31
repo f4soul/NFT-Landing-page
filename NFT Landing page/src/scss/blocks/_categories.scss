@@ -1,0 +1,82 @@
+.categories {
+	margin-top: 180px;
+
+	background-image: url(../img/categories-blur.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 25% -100px;
+
+	@media(max-width: 768px) {
+		margin-top: 80px;
+	}
+
+	.auction__img {
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 15px;
+			background: #00000073;
+			opacity: 0;
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			&:after {
+				opacity: 1;
+			}
+
+			button {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}
+
+		button {
+			background: var(--yellow);
+			backdrop-filter: blur(22px);
+			color: var(--page-bg);
+			text-align: center;
+			opacity: 0;
+			border-radius: 15px;
+			pointer-events: none;
+			font-size: 24px;
+			font-weight: 600;
+			line-height: normal;
+			padding: 21px 58px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			white-space: nowrap;
+			transition: all 0.3s;
+
+			&:hover {
+				box-shadow: 0px 0px 15px 2px rgba(253, 211, 7, 0.5);
+			}
+		}
+	}
+
+	.title--purple {
+		@media(max-width: 450px) {
+			width: 258px;
+			text-align: center;
+			flex-direction: column;
+			font-weight: 700;
+			line-height: 150%;
+			font-size: 36px;
+
+			&:after {
+				@media(max-width: 450px) {
+					transform: translateY(-95%) translateX(0);
+				}
+			}
+		}
+	}
+}

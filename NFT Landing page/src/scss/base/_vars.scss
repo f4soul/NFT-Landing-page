@@ -1,0 +1,24 @@
+:root {
+	--container-width: 1390px;
+	--container-padding: 15px;
+
+	--font-main: 'Work Sans',
+		sans-serif;
+	--font-accent: 'Oxanium',
+		cursive;
+
+	--page-bg: #1C121F;
+	--text-color: #F5FBF2;
+	--yellow: #FFCE4E;
+	--purple: #8613A5;
+	--red: #E03054;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

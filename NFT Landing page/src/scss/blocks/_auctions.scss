@@ -1,0 +1,250 @@
+.auctions {
+	overflow: hidden;
+	margin-top: 180px;
+
+	background-image: url(./../img/auctions-blur.png);
+	background-repeat: no-repeat;
+	background-position: -50px;
+
+	@media(max-width: 1300px) {
+		margin-top: 146px;
+		font-size: 18px;
+		padding: 10px 25px;
+	}
+
+	@media(max-width: 768px) {
+		margin-top: 80px;
+	}
+}
+
+.auction__img {
+	position: relative;
+
+	img {
+		object-fit: cover;
+		display: block;
+		border-radius: 15px;
+		width: 100%;
+		height: 100%;
+	}
+
+	div {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0.95;
+		background: linear-gradient(177deg, var(--purple) 0%, rgba(250, 250, 250, 0.65) 100%);
+		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
+		backdrop-filter: blur(22.5px);
+		border-radius: 0 15px;
+		padding: 15px 45px;
+		color: var(--text-color);
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 35px;
+		letter-spacing: 0.48px;
+
+		@media(max-width: 1100px) {
+			font-size: 20px;
+			padding: 10px 25px;
+		}
+	}
+}
+
+.auctions__profile-card {
+	display: flex;
+	align-items: center;
+
+	img {
+		display: block;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 28px 16px 0 0;
+		width: 64px;
+		height: 64px;
+
+		@media(max-width: 768px) {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+.auctions__bid {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.auctions__btn {
+	display: block;
+	border: 1px solid #FDE8B3;
+	background: rgba(233, 215, 167, 0.10);
+	padding: 21px 0;
+	color: var(--text-color);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 35px;
+	letter-spacing: 1.2px;
+	width: 100%;
+	margin-top: 40px;
+	border-radius: 15px;
+	transition: all .3s;
+
+	&:hover {
+		background: darken(rgba(233, 215, 167, 0.10), 60);
+	}
+}
+
+.auctions__item {
+	background: #3D2942;
+	padding: 32px;
+	//max-width: 495px;
+	border-radius: 15px;
+
+	@media(max-width: 900px) {
+		padding: 20px 15px;
+	}
+}
+
+.auctions-slide {
+	@media(max-width: 600px) {
+		display: none;
+	}
+}
+
+.swiper-wrapper {
+	@media(max-width: 600px) {
+		flex-direction: column;
+		gap: 45px;
+	}
+}
+
+.auctions__profile {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 28px;
+}
+
+.auctions__profile-des {
+	color: var(--text-color);
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 35px;
+	margin-top: 28px;
+
+	@media(max-width: 1300px) {
+		font-size: 20px;
+	}
+
+	@media(max-width: 1100px) {
+		font-size: 18px;
+	}
+}
+
+.auctions__profile-user {
+	color: #BDAAC1;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 35px;
+	margin-top: 8px;
+
+	@media(max-width: 1100px) {
+		font-size: 18px;
+		margin-top: 0;
+	}
+}
+
+.auctions__profile-likes {
+	display: flex;
+	align-items: center;
+	margin-top: 28px;
+	background-image: "../img/nft-item.jpg);";
+
+	img {
+		width: 28px;
+		margin-right: 9px;
+	}
+
+	span {
+		color: #76607A;
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 35px;
+	}
+
+	@media(max-width: 1100px) {
+		img {
+			width: 20px;
+		}
+
+		span {
+			font-size: 22px;
+		}
+	}
+
+	@media(max-width: 768px) {
+		img {
+			width: 20px;
+		}
+
+		span {
+			font-size: 22px;
+		}
+	}
+}
+
+.auctions__bid-title {
+	color: #C6BFC8;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+
+	@media(max-width: 1100px) {
+		font-size: 22px;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 18px;
+	}
+}
+
+.auctions__bid-price {
+	font-family: var(--font-accent);
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+
+	@media(max-width: 1100px) {
+		font-size: 22px;
+	}
+
+	@media(max-width: 768px) {
+		font-size: 18px;
+	}
+}
+
+.auctions__view-all {
+	margin: 84px auto 0;
+	padding: 24px 64px;
+	border: 1px solid var(--yellow);
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	display: block;
+	border-radius: 15px;
+	transition: all 0.3s;
+
+	&:hover {
+		-webkit-box-shadow: 0px 0px 15px 2px rgba(253, 211, 7, 0.5);
+		-moz-box-shadow: 0px 0px 15px 2px rgba(253, 211, 7, 0.5);
+		box-shadow: 0px 0px 15px 2px rgba(253, 211, 7, 0.5);
+	}
+
+	@media(max-width: 450px) {
+		padding: 13px 48px;
+		font-size: 18px;
+		margin: 44px auto 0;
+	}
+}
